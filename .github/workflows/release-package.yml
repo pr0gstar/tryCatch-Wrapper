@@ -17,7 +17,7 @@ jobs:
           bun-version: latest
           registry-url: https://npm.pkg.github.com/
       - run: bun i
-      - run: bun build
+      - run: bun run build
       - run: bun publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GH_TOKEN}}

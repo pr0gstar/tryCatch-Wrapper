@@ -2,7 +2,7 @@
   "name": "trycatch-wrapper",
   "description": "A simple try-catch wrapper for TypeScript inspired by Golang",
   "version": "1.0.0",
-  "entry point": "index.ts",
+  "entrypoint": "index.ts",
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
