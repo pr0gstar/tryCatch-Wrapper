@@ -29,5 +29,8 @@
     "typescript"
   ],
   "author": "Christoph Planken <Herrlich Digital>",
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "@pr0gstar:registry": "https://npm.pkg.github.com"
+  }
 }
