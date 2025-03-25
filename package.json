@@ -1,0 +1,33 @@
+{
+  "name": "trycatch-wrapper",
+  "description": "A simple try-catch wrapper for TypeScript inspired by Golang",
+  "version": "1.0.0",
+  "entry point": "index.ts",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "tsup": "^8.4.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "keywords": [
+    "try",
+    "catch",
+    "trycatch",
+    "wrapper",
+    "typescript"
+  ],
+  "author": "Christoph Planken <Herrlich Digital>",
+  "license": "MIT"
+}
