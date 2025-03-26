@@ -1,9 +1,6 @@
 name: Publish NPM package to GH packages
 
 on:
-  push:
-    branches:
-      - main
   release:
     types: [created]
 
