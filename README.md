@@ -1,6 +1,6 @@
 # TryCatch-Wrapper
 
-![Release-Package](https://github.com/github/docs/actions/workflows/release-package.yml/badge.svg)
+![Release-Package](https://github.com/pr0gstar/tryCatch-Wrapper/actions/workflows/release-package.yml/badge.svg)
 
 ## Overview
 
