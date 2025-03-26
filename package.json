@@ -1,5 +1,5 @@
 {
-  "name": "trycatch-wrapper",
+  "name": "tryCatchWrapper",
   "description": "A simple try-catch wrapper for TypeScript inspired by Golang",
   "version": "1.0.0",
   "entrypoint": "index.ts",
