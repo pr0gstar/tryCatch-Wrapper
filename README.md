@@ -9,19 +9,19 @@ TryCatch-Wrapper is a lightweight utility designed to simplify error handling in
 You can install the package from GitHub Packages using bun:
 
 ```sh
-bun add @your-github-username/trycatch-wrapper
+bun add @pr0gstar/trycatch-wrapper
 ```
 
 or using npm:
 
 ```sh
-npm install @your-github-username/trycatch-wrapper
+npm install @pr0gstar/trycatch-wrapper
 ```
 
 or using yarn:
 
 ```sh
-yarn add @your-github-username/trycatch-wrapper
+yarn add @pr0gstar/trycatch-wrapper
 ```
 
 ## Usage
