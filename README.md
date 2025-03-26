@@ -60,7 +60,7 @@ export async function tryCatch<T, E = Error>(
 ### Basic Example
 
 ```ts
-import { tryCatch } from "@your-github-username/trycatch-wrapper";
+import { tryCatch } from "@pr0gstar/trycatch-wrapper";
 
 async function fetchData(): Promise<string> {
   return await fetch("https://api.example.com/data").then((res) => res.json());
