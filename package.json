@@ -7,6 +7,10 @@
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "exports": {
+    "import": "./dist/index.cjs.js",
+    "require": "./dist/index.js"
+  }
   "files": [
     "dist"
   ],
