@@ -4,12 +4,12 @@
   "version": "1.0.1",
   "entrypoint": "index.ts",
   "type": "module",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
-    "import": "./dist/index.cjs.js",
-    "require": "./dist/index.js"
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs"
   },
   "files": [
     "dist"
