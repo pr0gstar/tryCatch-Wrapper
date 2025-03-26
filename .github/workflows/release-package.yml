@@ -15,21 +15,20 @@ jobs:
       id-token: write # This is required for requesting the JWT
       contents: read
     steps:
-      - uses: actions/checkout@v4
-      - uses: oven-sh/setup-bun@v2
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v4
+
+      - name: ⎔ Setup bun
+        uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
           registry-url: https://npm.pkg.github.com/
           scope: "@pr0gstar"
-      - name: Setup .npmrc for GitHub Packages
-        run: echo "@pr0gstar:registry=https://npm.pkg.github.com/" >> ~/.npmrc
 
-      - name: Authenticate with GitHub Packages
-        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> ~/.npmrc
-      - run: bun i
-      - run: bun run build
-      - name: Publish package
+      - name: 📥 Download deps
+        run: bun i --frozen-lockfile
+
+      - name: 🚀 Build & Publish
+        run: bun run build && bun publish --verbose
         env:
-          NPM_CONFIG_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          bun publish --verbose
+          NPM_CONFIG_TOKEN: ${{ secrets.GH_TOKEN }}
