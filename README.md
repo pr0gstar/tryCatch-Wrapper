@@ -6,7 +6,13 @@ TryCatch-Wrapper is a lightweight utility designed to simplify error handling in
 
 ## Installation
 
-You can install the package from GitHub Packages using npm:
+You can install the package from GitHub Packages using bun:
+
+```sh
+bun add @your-github-username/trycatch-wrapper
+```
+
+or using npm:
 
 ```sh
 npm install @your-github-username/trycatch-wrapper
