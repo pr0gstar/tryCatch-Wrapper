@@ -25,6 +25,6 @@ jobs:
       - run: bun run build
       - name: Publish package
         env:
-          BUN_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_CONFIG_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           bun publish --verbose
