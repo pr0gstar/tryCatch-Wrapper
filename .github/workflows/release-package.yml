@@ -21,6 +21,11 @@ jobs:
           bun-version: latest
           registry-url: https://npm.pkg.github.com/
           scope: "@pr0gstar"
+      - name: Setup .npmrc for GitHub Packages
+        run: echo "@pr0gstar:registry=https://npm.pkg.github.com/" >> ~/.npmrc
+
+      - name: Authenticate with GitHub Packages
+        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> ~/.npmrc
       - run: bun i
       - run: bun run build
       - name: Publish package
