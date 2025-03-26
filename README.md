@@ -1,5 +1,7 @@
 # TryCatch-Wrapper
 
+![Release-Package](https://github.com/github/docs/actions/workflows/release-package.yml/badge.svg)
+
 ## Overview
 
 TryCatch-Wrapper is a lightweight utility designed to simplify error handling in TypeScript applications. It provides a structured approach to handling asynchronous errors using a `Result` type pattern, ensuring better code maintainability and readability.
