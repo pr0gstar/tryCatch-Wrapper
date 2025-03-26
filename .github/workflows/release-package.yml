@@ -36,4 +36,4 @@ jobs:
       - name: 🚀 Publish
         run: bun publish --verbose
         env:
-          NPM_AUTH_TOKEN: ${{ secrets.GH_TOKEN }}
+          NPM_CONFIG_TOKEN: ${{ secrets.GH_TOKEN }}
