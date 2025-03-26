@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       packages: write
+      id-token: write # This is required for requesting the JWT
       contents: read
     steps:
       - uses: actions/checkout@v4
@@ -19,8 +20,11 @@ jobs:
         with:
           bun-version: latest
           registry-url: https://npm.pkg.github.com/
+          scope: "@pr0gstar"
       - run: bun i
       - run: bun run build
-      - run: bun publish
+      - name: Publish package
         env:
-          BUN_AUTH_TOKEN: ${{secrets.GH_TOKEN}}
+          BUN_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          bun publish --verbose
